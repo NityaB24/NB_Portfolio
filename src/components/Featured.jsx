@@ -35,7 +35,7 @@ function Featured() {
                     {/* </h1> */}
                     <div className="card w-full h-full rounded-xl overflow-hidden">
                         <a href="https://github.com/NityaB24/Bangalore_House_Price">
-                            <img className="w-full h-full bg-cover" src="images/House Price Prediction-2.png" alt="" />
+                            <img className="w-full h-full bg-cover" src="/images/House Price Prediction-2.png" alt="" />
                         </a>
                     </div>
                 </motion.div>
@@ -52,7 +52,7 @@ function Featured() {
                     ))}
                 </h1>
                     <div className="card w-full h-full rounded-xl overflow-hidden">
-                        <img className="w-full h-full bg-cover" src="images/Smart Parking.png" alt="" />
+                        <img className="w-full h-full bg-cover" src="/images/Smart Parking.png" alt="" />
                     </div>
                 </motion.div>
             </div>

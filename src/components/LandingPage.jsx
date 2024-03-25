@@ -44,7 +44,7 @@ function LandingPage() {
          transition={{ duration: 30 }} 
         className="image-section mt-20 ml-20 flex"
       >     
-        <img src="images/about_page_4.png" alt="Your Image" style={{ width: '640px', height: '594px' }} />
+        <img src="/images/about_page_4.png" alt="Your Image" style={{ width: '640px', height: '594px' }} />
       </motion.div>
     </div>
     <div className="border-t-[1px] border-zinc-800 mt-20 flex justify-between item-center py-5 px-20">
