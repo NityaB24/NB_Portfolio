@@ -1,0 +1,25 @@
+
+  
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #CDEA66;
+  }
+  
+  .title {
+    font-size: 3vw;
+  }
+  
+  .cursor {
+    background-color: #111;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  

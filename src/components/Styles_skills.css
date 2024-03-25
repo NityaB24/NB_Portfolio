@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.border-zinc-700 {
+    border-color: #666666;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.text-7xl {
+    font-size: 5rem;
+}
+
+.tracking-tighter {
+    letter-spacing: -0.05em;
+}
+
+.logos {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Ensure logos are displayed in a single line */
+    padding: 90px 0;
+    /* background: rgb(24 24 27); */
+    background: #135950 ;
+    display: flex; /* Ensure logos-slide containers are displayed in a row */
+}
+
+.logos-slide {
+    display: flex; /* Ensure logos inside logos-slide are displayed in a row */
+    padding-right: 100px; /* Add padding to the right to create space between batches */
+    animation: slide 40s infinite linear;
+}
+
+.logos-slide img {
+    height: 90px;
+    margin: 0 80px; /* Adjust spacing between logos */
+}
+
+.logos::after,
+.logos::before {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgb(24 24 27), rgb(24 24 27));
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgb(24 24 27), rgb(24 24 27));
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
