@@ -51,6 +51,7 @@ body {
 .logos {
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow: hidden;
     white-space: nowrap; /* Ensure logos are displayed in a single line */
     padding: 90px 0;
     /* background: rgb(24 24 27); */

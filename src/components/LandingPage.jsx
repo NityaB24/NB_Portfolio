@@ -29,7 +29,7 @@ function LandingPage() {
                     </svg> */}
                   </motion.div>)}
 
-                <h1 className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] leading-[.75] font-['Founders'] font-bold tracking-tight">{item}</h1>
+                <h1 className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] leading-[.75] font-['Founders']  tracking-tight">{item}</h1>
               </div>
             </div>
           );
