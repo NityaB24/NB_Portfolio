@@ -4,8 +4,8 @@ import './Styles_skills.css';
 function Skills() {
   return (
     <div id='skills' className="w-full py-20 bg-[#135950] rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-3xl">
-      <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-20">
-        <h1 className="text-7xl font-['Founder'] text-[#CDEA66]">
+      <div className="bord w-full  border-b-[1px] border-zinc-700 ">
+        <h1 className="text1 text-7xl font-['Founder'] text-[#CDEA66]">
           Skills
         </h1>
       </div>

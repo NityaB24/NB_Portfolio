@@ -45,6 +45,11 @@ img {
   height: auto;
 }
 
+.te {
+  padding-left: 80px;
+  padding-bottom: 80px;
+}
+
 /*=============== CARD ===============*/
 .container {
   display: grid;
@@ -65,7 +70,7 @@ img {
 }
 
 .card__img {
-  width: 404px;
+  width: 70vw;
   border-radius: 1.5rem;
 }
 
@@ -170,14 +175,25 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 600px) {
+  .te{
+    padding-left: 8vw;
+  }
+  .te h1{
+    margin: 0px;
+    font-size: 3rem;
+  }
   .container {
-    margin-inline: 1rem;
+    margin-inline: 0.3rem;
+    margin-top: 50px;
   }
 
   .card__data {
-    width: 250px;
+    width: 65vw;
     padding: 1rem;
+  }
+  .card__description{
+    font-size: 1rem;
   }
 }
 

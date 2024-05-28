@@ -1,0 +1,155 @@
+.footer-container {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    font-family: 'Founder';
+  }
+  
+  .content {
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 9vw;
+    text-transform: uppercase;
+    line-height: none;
+    margin-bottom: 10px;
+  }
+  
+  .dets {
+    margin-top: 20px;
+  }
+  
+  .sub-title {
+    font-size: 1.5vw;
+    line-height: none;
+    font-family: 'Founders';
+    font: lighter;
+    color: #CDEA66;
+  }
+  
+  .link {
+    display: block;
+    font-size: 2vw;
+    font-weight: 300;
+    font-family: 'Founders';
+    font: lighter;
+  }
+  
+  .copy {
+    margin-top: 1vh;
+    opacity: 0.4;
+
+  }
+
+  .social.dets {
+    display: flex;
+    flex-direction: column;
+    display: inline-block; /* Ensures proper positioning */
+}
+
+  .social a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    text-decoration: none; /* Remove default underline */
+}
+
+.social a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 2px; /* Adjust this value for the thickness of the underline */
+    background-color: #CDEA66; /* Underline color */
+    transition: width 0.3s ease-out;
+}
+
+.social a:hover::after {
+    width: 100%;
+}
+  
+  .social1 a {
+    position: relative;
+    color: white;
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Ensures proper positioning */
+}
+
+.social1 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 2px; /* Adjust this value for the thickness of the underline */
+    background-color: #CDEA66; /* Underline color */
+    transition: width 0.3s ease-out;
+}
+
+.social1 a:hover::after {
+    width: 100%;
+}
+
+
+  .download-cv-button{
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 1.2vw;
+    border: 1px solid #fff;
+    color: #cdea66;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  .view-cv-button{
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1.2vw;
+    border: 1px solid #fff;
+    color: #cdea66;
+    border-radius: 15px;
+
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 500px) {
+    .footer-container {
+      flex-direction: column;
+      padding: 25px;
+    }
+  
+    .title {
+      font-size: 15vw;
+      margin-bottom: 5px;
+    }
+  
+    .sub-title {
+      font-size: 5vw;
+    }
+  
+    .link {
+      font-size: 4vw;
+    }
+  
+    .copy {
+      font-size: 3vw;
+      font-weight: 700;
+    }
+    .view-cv-button{
+      margin-top: 3vw;
+      font-size: 12px;
+      padding: 5px;
+      border-radius: 8px;
+    }
+    .download-cv-button{
+      margin-top: 3vw;
+      font-size: 12px;
+      padding: 5px;
+      border-radius: 8px;
+    }
+  }
+  

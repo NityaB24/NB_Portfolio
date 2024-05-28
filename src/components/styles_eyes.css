@@ -1,0 +1,119 @@
+.eyes {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the background image is behind other content */
+}
+
+.eyes-container {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: #f4f4f5; /* Changed to a lighter color for better contrast */
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s, width 0.5s, height 0.5s; /* Add transition for smooth opening and closing */
+}
+
+.eye.closed {
+  background-color: #166157; /* Change background to black to simulate closed eyes */
+  transition: background-color 1.5s, width 1.5s, height 1.5s; /* Ensure the transition also applies when closing */
+}
+
+.eye.closed::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  background-color: #cdea66;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: height 1.5s; /* Add transition to simulate smooth closing */
+}
+
+.pupil {
+  position: relative;
+  width: 70.66%;
+  height: 74.66%;
+  border-radius: 49%;
+  background-color: #000;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #000; /* Make sure the line is black */
+}
+
+.inner-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f4f4f5; /* Changed to a lighter color for better contrast */
+}
+
+/* Responsive styles */
+@media (max-width: 500px) {
+  .eyes {
+    width: 100%;
+    height: 52vh;
+    margin-top: -200px;
+    margin-bottom: -80px;
+  }
+
+  .bg-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .eyes-container {
+    gap: 10px;
+  }
+
+  .eye {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .pupil {
+    width: 66.66%;
+    height: 66.66%;
+  }
+
+  .line {
+    height: 5px; /* Adjusted for smaller size */
+  }
+
+  .inner-circle {
+    width: 15px; /* Adjusted for smaller size */
+    height: 15px; /* Adjusted for smaller size */
+  }
+}

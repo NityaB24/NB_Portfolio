@@ -17,37 +17,12 @@ body {
     }
 }
 
-.w-full {
-    width: 100%;
+
+
+.bord{
+    padding-left: 80px;
+  padding-bottom: 80px;
 }
-
-.py-20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.px-20 {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-.border-zinc-700 {
-    border-color: #666666;
-}
-
-.pb-20 {
-    padding-bottom: 20px;
-}
-
-.text-7xl {
-    font-size: 5rem;
-}
-
-.tracking-tighter {
-    letter-spacing: -0.05em;
-}
-
 .logos {
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Hide vertical scrollbar */
@@ -80,7 +55,7 @@ body {
     z-index: 2;
 }
 
-.logos::before {
+/* .logos::before {
     left: 0;
     background: linear-gradient(to left, rgb(24 24 27), rgb(24 24 27));
 }
@@ -88,8 +63,40 @@ body {
 .logos::after {
     right: 0;
     background: linear-gradient(to right, rgb(24 24 27), rgb(24 24 27));
-}
+} */
 
 .logos:hover .logos-slide {
     animation-play-state: paused;
+}
+
+
+/* Responsive styles */
+@media (max-width: 500px) {
+    .bord{
+        padding-left: 8vw;
+      }
+    .bord h1{
+        margin: 0px;
+        font-size: 3rem;
+      }
+    .logos {
+        margin-bottom: 0px;
+        padding-top: 65px;
+        padding-bottom: 0px;
+         /* Adjust padding for smaller screens */
+    }
+
+    .logos-slide {
+        padding-right: 50px; /* Adjust padding to the right for smaller screens */
+    }
+
+    .logos-slide img {
+        height: 55px; /* Adjust image height for smaller screens */
+        margin: 0 35px; /* Adjust spacing between logos */
+    }
+
+    .logos::after,
+    .logos::before {
+        width: 125px; /* Adjust gradient width for smaller screens */
+    }
 }

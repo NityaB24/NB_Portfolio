@@ -1,0 +1,48 @@
+.marq {
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #004D43;
+}
+.text {
+    font-size: 22vw;
+    border-top: 2px solid #d1d5db;
+    border-bottom: 2px solid #d1d5db;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text h1 {
+    font-size: 22vw;
+    line-height: 1;
+    font-family: 'Founder', sans-serif;
+    text-transform: uppercase;
+    padding-top: 24px;
+    margin-bottom: -6vw;
+    padding-right: 10px;
+}
+
+@media (max-width: 500px) {
+    .marq {
+        height: auto; /* Adjust this based on your needs */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .text {
+        gap: 5px;
+    }
+
+    .text h1 {
+        font-size: 25vw; /* Adjust font size for smaller screens */
+        padding-top: 6vw;
+        margin-bottom: -3vw;
+        padding-right: 5px;
+    }
+}
+

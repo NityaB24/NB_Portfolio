@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
-
+import './style_starting.css'
 const Starting = () => {
   const comp = useRef(null)
 

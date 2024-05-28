@@ -4,7 +4,7 @@ function Hover_project() {
   return (
     <>
     <div id="featured" className="w-full py-20">
-    <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-20">
+    <div className="te w-full  border-b-[1px] border-zinc-700 ">
             <h1 className="text-7xl font-['Founder'] trackin-tighter">
                 Featured Projects
             </h1>
@@ -30,7 +30,7 @@ function Hover_project() {
                     <h2 className="card__title">
                         CV, Python
                     </h2>
-                    <button className="card__button" onClick={() => window.location.href = "https://github.com/NityaB24/Booking.com"}>
+                    <button className="card__button" onClick={() => window.location.href = "https://github.com/NityaB24/OpenCV_Mediapipe-Projects/tree/main/Smart%20Parking%20System"}>
                         Github
                     </button>
                 </div>

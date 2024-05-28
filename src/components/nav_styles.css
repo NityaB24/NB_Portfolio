@@ -1,0 +1,24 @@
+.menu{
+    display: none;
+}
+
+@media (max-width:500px) {
+    #nav{
+        padding: 8vw 5vw;
+        justify-content: space-between;
+    }
+    .logo{
+        font-size: 42px;
+        margin-left: 2vw;
+    }
+    .about,.work,.skills,.contact{
+        display: none;
+    }
+    .menu{
+        display: inline;
+    }
+    .links{
+        justify-content: flex-end;
+        margin-right: -35px;
+    }
+}

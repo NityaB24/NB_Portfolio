@@ -1,0 +1,40 @@
+/* General styles */
+#about {
+    width: 100%;
+    padding: 6vw 5.3vw;
+    background-color: #CDEA66;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: black;
+  }
+  
+  #about h1, #about h2 {
+    font-family: 'Neue Montreal', sans-serif;
+    font-size: 3.5vw;
+    line-height: 4.6vw;
+  }
+  
+  #about h2 .underline {
+    text-decoration: underline;
+  }
+  
+  
+  
+  /* Responsive styles */
+  @media (max-width: 500px) {
+    #about {
+      padding: 8vw 5vw;
+      border-radius: 0;
+    }
+  
+    #about h1, #about h2 {
+      font-size: 5vw; /* Increase font size for better readability on smaller screens */
+      line-height: 7.5vw;
+    }
+  
+    #about h2 .underline,
+    #about h2 .bold {
+      font-size: inherit; /* Ensure these styles scale with the responsive font size */
+    }
+  }
+  
