@@ -1,25 +1,73 @@
-@media (max-width:500px) {
-    #welcome{
+@media (max-width: 480px) {
+    #welcome {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 15vw;
         margin-left: 4vw;
     }
-    #title-1{
+    #title-1 {
         font-size: 9vw;
         margin-top: 10vw;
     }
-    #title-2{
+    #title-2 {
         font-size: 10vw;
         margin-top: 10vw;
     }
-    #title-3{
+    #title-3 {
         font-size: 10vw;
         margin-top: 10vw;
     }
-    #title-4{
+    #title-4 {
         font-size: 10vw;
         margin-top: 10vw;
     }
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Styles for small devices */
+    #welcome {
+        font-size: 14vw;
+        margin-left: 3vw;
+    }
+    #title-1, #title-2, #title-3, #title-4 {
+        font-size: 9vw;
+        margin-top: 9vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for medium devices */
+    #welcome {
+        font-size: 13vw;
+        margin-left: 2vw;
+    }
+    #title-1, #title-2, #title-3, #title-4 {
+        font-size: 9vw;
+        margin-top: 8vw;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for large devices */
+    #welcome {
+        font-size: 12vw;
+        margin-left: 1vw;
+    }
+    #title-1, #title-2, #title-3, #title-4 {
+        font-size: 9vw;
+        margin-top: 6vw;
+    }
+}
+
+/* @media (min-width: 1201px) {
+
+    #welcome {
+        font-size: 11vw;
+        margin-left: 0;
+    }
+    #title-1, #title-2, #title-3, #title-4 {
+        font-size: 5vw;
+        margin-top: 6vw;
+    }
+} */

@@ -10,7 +10,7 @@ body.no-scroll {
     display: none;
   }
   
-  @media (max-width: 500px) {
+  @media (max-width: 640px) {
     #nav {
       padding: 8vw 5vw;
       justify-content: space-between;
